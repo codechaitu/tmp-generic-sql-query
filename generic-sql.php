@@ -69,7 +69,7 @@ foreach ($whereList as $key=>$value){
 }
 
 // Condition check for expiration date
-if($useExpirationDate = "true"){
+if($useExpirationDate == "true"){
     $whereClauseStatement .= " AND (expiration_date IS NULL OR expiration_date > NOW()) ";
 }
 
