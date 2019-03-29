@@ -39,7 +39,7 @@ echo $sqlQuery;
 }
 
 function getSqlFromParams($varSelect, $constraintClause, $whereClause){
-    return "SELECT ".$varSelect." FROM ACL ".$constraintClause." ".$whereClause;
+    return "SELECT ".$varSelect." FROM ACL ".$constraintClause." WHERE ".$whereClause;
 }
 
 function multiexplode ($delimiters,$string) {
